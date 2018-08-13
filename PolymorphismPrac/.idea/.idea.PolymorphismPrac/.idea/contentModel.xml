@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Animals.cs" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="Cat.cs" t="Include" />
+      <e p="Dog.cs" t="Include" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="PolymorphismPrac.csproj" t="IncludeRecursive" />
+      <e p="PolymorphismPrac.sln" t="IncludeFlat" />
+      <e p="Program.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="AssemblyInfo.cs" t="Include" />
+      </e>
+      <e p="Snake.cs" t="Include" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_PolymorphismPrac.-2131887484.00" t="ExcludeRecursive" />
+  </component>
+</project>
