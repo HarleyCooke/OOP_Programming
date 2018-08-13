@@ -12,6 +12,14 @@ namespace PolymorphismPrac
 
         public abstract class Mammal : Animals
         {
+            protected Mammal(int age, float hunger, float life, string name)
+            {
+                this.Age = age;
+                this.Hunger = hunger;
+                this.Life = life;
+                this.Name = name;
+            }
+
             public abstract void Move();
             public abstract void Poop();
             public abstract void Feed();
@@ -20,6 +28,14 @@ namespace PolymorphismPrac
 
         public abstract class Reptile : Animals
         {
+            protected Reptile(int age, float hunger, float life, string name)
+            {
+                this.Age = age;
+                this.Hunger = hunger;
+                this.Life = life;
+                this.Name = name;
+            }
+
             public abstract void Move();
             public abstract void Poop();
             public abstract void Feed();

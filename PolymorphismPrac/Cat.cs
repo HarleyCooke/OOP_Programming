@@ -3,14 +3,14 @@ using System.Security.Policy;
 
 namespace PolymorphismPrac
 {
-    public class Cat : Animals.Mammal
+    public abstract class Cat : Animals.Mammal
     {
-        public Cat(int legs)
+        public int Legs = 4;
+        
+        protected Cat(int legs, float life, int age, string name, float hunger) :base(age, hunger, life, name)
         {
-            Legs = legs;
+            this.Legs = legs;
         }
-
-        private int Legs { get; }
         
                 public override void Move()
                 {

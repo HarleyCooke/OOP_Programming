@@ -3,9 +3,9 @@ using System.Security.Policy;
  
  namespace PolymorphismPrac
  {
-     public class Dog : Animals.Mammal
+     public abstract class Dog : Animals.Mammal
      {
-         public Dog(int legs)
+         protected Dog(int legs, int age, float hunger, float life, string name) : base(age, hunger, life, name)
          {
              this.Legs = legs;
          }
