@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="CIV_UnitTesting_Excercises.Tests.csproj" t="IncludeRecursive" />
+      <e p="CIV_UnitTesting_Excercises.Tests.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="packages.config" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="AssemblyInfo.cs" t="Include" />
+      </e>
+      <e p="RecursiveCalculationsTests.cs" t="Include" />
+    </e>
+    <e p="$PROJECT_DIR$/../packages/NUnit3TestAdapter.3.10.0/build/net35/Mono.Cecil.dll" t="Include" />
+    <e p="$PROJECT_DIR$/../packages/NUnit3TestAdapter.3.10.0/build/net35/nunit.engine.api.dll" t="Include" />
+    <e p="$PROJECT_DIR$/../packages/NUnit3TestAdapter.3.10.0/build/net35/nunit.engine.dll" t="Include" />
+    <e p="$PROJECT_DIR$/../packages/NUnit3TestAdapter.3.10.0/build/net35/NUnit3.TestAdapter.dll" t="Include" />
+    <e p="$PROJECT_DIR$/../packages/NUnit3TestAdapter.3.10.0/build/net35/NUnit3.TestAdapter.pdb" t="Include" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_CIV_UnitTesting_Excercises.Tests.353172142.00" t="ExcludeRecursive" />
+  </component>
+</project>
