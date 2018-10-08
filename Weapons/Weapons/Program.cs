@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Security.AccessControl;
 
 
@@ -25,9 +26,10 @@ namespace Weapons
 
             Player P1 = new Player();
             
-            Ai A1 = new Ai();
+            AI A1 = new AI();
 
             var menuNum = 0;
+            var atkNum = 0;
             
             void Ai()
             {
@@ -54,7 +56,7 @@ namespace Weapons
                     }
                     else
                     {
-                        Console.WriteLine(Environment.NewLine + "AI missed wasn't within Range! ");
+                        Console.WriteLine(Environment.NewLine + "AI missed wasn't within Range! " + Environment.NewLine);
                     }
                 }
 
@@ -83,7 +85,7 @@ namespace Weapons
             
             P1.Name = Console.ReadLine();
 
-            Console.WriteLine("Ok then " + P1.Name + " Whats is the name of your Foe! " + Environment.NewLine);
+            Console.WriteLine(Environment.NewLine + "Ok then " + P1.Name + " Whats is the name of your Foe! " + Environment.NewLine);
 
             A1.Name = Console.ReadLine();
             
@@ -100,10 +102,9 @@ namespace Weapons
                 Random rnd = new Random();
                 
                 int r = rnd.Next(Weapons.Count);
-
-                string output = string.Join(Environment.NewLine, Weapons.ToArray(), Environment.NewLine);
                 
-                Console.Write(output);
+                Console.Write(Weapons[r].Info());
+               
                 Console.ReadLine();
                 
             }
@@ -122,7 +123,8 @@ namespace Weapons
                 if (menuNum == 1)
                 {
                     P1.Move();
-                    Console.WriteLine("You are now in Position  " + P1.Postion);
+                    Console.WriteLine("You are now in Position  " + P1.Postion + Environment.NewLine);
+                    Console.WriteLine("ActionPoints:  " + P1.ActionPoint + Environment.NewLine);
                     Ai();
                     
                     
@@ -131,70 +133,28 @@ namespace Weapons
                         {
                             P1.Block();
                             Console.WriteLine("You Have Blocked Half the incoming damage!");
+                            Ai();
                         }
 
                 if (menuNum == 3)
                 {
+                    Console.WriteLine("1: Melee Attack.." + Environment.NewLine +
+                                      "2: Ranged Attack..");
                     
+                    atkNum = Int32.Parse(Console.ReadLine());
+
+                    if (atkNum == 1)
+                    {
+                        
+                    }
                 }
                 
-                
-
-
-
-
-
-
-
-
 
             }
             
             Console.WriteLine("You Died");
         }
 
-    }
-    
-    
-    public class Ai
-    {
-        public string Name { get; set; }
-        public int Health = 200;
-        public int ActionPoints = 15;
-        public int Postion = 10;
-
-        public int Move()
-        {
-            return Postion--;
-        }
-
-        public void Block()
-        {
-            
-        }
-        
-    }
-    
-    public class Player
-    {
-        public string Name { get; set; }
-        public int Health = 200;
-        public int ActionPoints = 15;
-        public int Postion = 10;
-        
-        List<Weapon> Held = new List<Weapon>();
-
-        public int Move()
-        {
-           return Postion--;
-        }
-        
-        public void Block()
-        {
-            
-        }
-        
-        
     }
     
 }

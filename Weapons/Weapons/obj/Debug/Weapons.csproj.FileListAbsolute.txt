@@ -1,0 +1,6 @@
+/Users/harleycooke/Documents/OOP/Weapons/Weapons/bin/Debug/Weapons.exe
+/Users/harleycooke/Documents/OOP/Weapons/Weapons/bin/Debug/Weapons.pdb
+/Users/harleycooke/Documents/OOP/Weapons/Weapons/obj/Debug/Weapons.csprojResolveAssemblyReference.cache
+/Users/harleycooke/Documents/OOP/Weapons/Weapons/obj/Debug/Weapons.csproj.CoreCompileInputs.cache
+/Users/harleycooke/Documents/OOP/Weapons/Weapons/obj/Debug/Weapons.exe
+/Users/harleycooke/Documents/OOP/Weapons/Weapons/obj/Debug/Weapons.pdb

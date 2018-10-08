@@ -20,15 +20,15 @@ namespace Weapons
         public int ActionPoint { get; set; }
         public int CritDamge { get; set; }
 
-        public abstract int poke();
-        
-        public abstract int attack();
+
+        public abstract string Info();
+
 
     }
 
 
 
-    public class Melee : Weapon
+    public class Melee : Weapon, IActionPoint, IDamage, IPoke
          {
              public string WepType { get; set; }
              
@@ -41,28 +41,34 @@ namespace Weapons
                  WepType = wepType;
              }
 
-             public override int poke()
+             public override string Info()
              {
-                 return 1;
+                 return "The " + WepType + Environment.NewLine +
+                        "Damage " + BaseDamage + Environment.NewLine +
+                        "Range " + BaseRange + Environment.NewLine +
+                        "Action Cost " + ActionPoint + Environment.NewLine;
              }
 
-             public override int attack()
+             public int Action()
+             {
+                 return ActionPoint--;
+             }
+
+             public int Damage()
              {
                  return BaseDamage;
              }
 
-             public void Info()
+             public int Poke()
              {
-                 Console.WriteLine("The " + WepType + Environment.NewLine + 
-                                   "Damage " + BaseDamage + Environment.NewLine +
-                                   "Range " + BaseRange + Environment.NewLine +
-                                   "Action Cost " + ActionPoint + Environment.NewLine );
+                 return -1;
              }
          }
     
-    public class Ranged : Weapon
+    public class Ranged : Weapon, IActionPoint, IDamage, IPoke
         {
             public string WepType { get; set; }
+            
             
             public Ranged(string wepType, int baseDamage, int baseRange, int actionPoint, int critDamge) : base(baseDamage, baseRange, actionPoint, critDamge)
             {
@@ -73,23 +79,28 @@ namespace Weapons
                 WepType = wepType;
                 
             }
-
-            public override int poke()
+            
+            public override string Info()
             {
-                return 1;
+                return "The " + WepType + Environment.NewLine +
+                       "Damage " + BaseDamage + Environment.NewLine +
+                       "Range " + BaseRange + Environment.NewLine +
+                       "Action Cost " + ActionPoint + Environment.NewLine;
             }
 
-            public override int attack()
+            public int Action()
+            {
+                return ActionPoint -2;
+            }
+
+            public int Damage()
             {
                 return BaseDamage;
             }
-            
-            public void Info()
+
+            public int Poke()
             {
-                Console.WriteLine("The " + WepType + Environment.NewLine + 
-                                  "Damage " + BaseDamage + Environment.NewLine +
-                                  "Range " + BaseRange + Environment.NewLine +
-                                  "Action Cost " + ActionPoint + Environment.NewLine );
+                return -1;
             }
         }    
     
