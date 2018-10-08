@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace PolymorphismPrac
 {
@@ -6,6 +7,7 @@ namespace PolymorphismPrac
     {
         public static void Main(string[] args)
         {
+            
         }
     }
 }

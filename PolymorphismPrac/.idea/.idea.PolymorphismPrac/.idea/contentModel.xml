@@ -16,6 +16,7 @@
       </e>
       <e p="Snake.cs" t="Include" />
     </e>
-    <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_PolymorphismPrac.-2131887484.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_PolymorphismPrac.-2131887484.00" t="ExcludeRecursive" />
   </component>
 </project>
